@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/Dzikri7/GIS/main/point.json") // Ganti "data.json" dengan nama file JSON Andaa
+    fetch("https://raw.githubusercontent.com/Dzikri7/GIS/main/openlayer/point.json") // Ganti "data.json" dengan nama file JSON Andaa
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("polygonTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/Dzikri7/GIS/main/polygon.json") // Ganti "data.json" dengan nama file JSON Andaa
+    fetch("https://raw.githubusercontent.com/Dzikri7/GIS/main/openlayer/polygon.json") // Ganti "data.json" dengan nama file JSON Andaa
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("polilineTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/Dzikri7/GIS/main/poliline.json") // Ganti "data.json" dengan nama file JSON Andaa
+    fetch("https://raw.githubusercontent.com/Dzikri7/GIS/main/openlayer/poliline.json") // Ganti "data.json" dengan nama file JSON Andaa
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
