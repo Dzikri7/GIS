@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Geografis</title>
+</head>
+<link rel="stylesheet" href="/Html/style.css">
+<body>
+
+    <style>
+        .dzikriol{
+          padding: 10px;
+          margin: 10px;
+          border: 1px solid black;
+          border: transparent;
+          width: 200px;
+          background-color: rgb(126, 185, 236);
+          color: white;
+          border-radius: 30px;
+          text-align: center;
+        }
+        .dzikriol:hover{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            border: transparent;
+            width: 200px;
+            background-color: rgb(255, 138, 20);
+            color: white;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+        }
+        .dzikriol a{
+          color: white;
+          text-decoration: none;
+        }
+      </style>
+
+    <div class="dzikriol">
+        <a href="../index.html">Dzikri Tugas - GCP JSON</a>
+      </div>
+      
+    <div>
+        <h1>DATA GEO OPENLAYERS</h1>
+        <h2>1214062 - Dzikri Izzatul Haq</h2>
+        <button id="ambilData">Ambil Data dari API</button>
+        <div id="hasil"></div>
+        <div class="point-table">
+            <h1>Data Point</h1>
+            <table id="pointTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Koordinat</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+        
+        <div class="polygon-table">
+            <h1>Data Poliline</h1>
+            <table id="polilineTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Koordinat</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        
+        <div class="polygon-table">
+            <h1>Data Polygon</h1>
+            <table id="polygonTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Koordinat</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        
+        <script type="module" src="script.js"></script>
+        <script src="script2.js"></script>
+    </div>
+    </body>
+    </html>
